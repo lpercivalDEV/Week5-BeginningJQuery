@@ -1,0 +1,105 @@
+Notes from jQuery Lecture - Day 1
+
+
+jQuery --> origins in the browser wars
+* purpose: cross-browser compatibility 
+* a huge library that enabled you to write one JS file and have it work on multiple browsers
+* a simplified syntax/way of writing javascript
+* a grouping of methods
+
+youmightnotneedjquery.com
+
+Look up company here at CIC --> one of the people at bocoup was in charge of writing the documentation for jQuery [Boaz Sender]
+
+Not really needed for cross platform compatibility since JS has been solidified
+Many now feel you should only write in JS from now on --> but you should still learn jQuery because many many projects still use it.
+
+A trip to the library takes time --> since jQuery is one step away from JS which is one step away from assembly/machine language, it can slow things down.
+
+yep/nope js --> a script: if it had something cool, if not, it would provide something elsse to substitute
+
+$ = probably using JQ
+but what it really represents is the removal of the longer selector syntax of "get.document.blahblahblah...""
+
+jQ always breaks down into two parts --> selecting something, and then doing an action on that something  --> select something, call a method
+
+Any element of the DOM will be nested in quotes!!!
+Don't need quotes --> document (the DOM itself), window (container of the DOM), this (object of an event)
+
+DOM containment method can restrict js from running before DOM is fully rendered
+
+Here is an example of the jq containment method:
+
+	$(document).ready(function(){
+		$("button").on("click",function(){
+		$("h2").css("color","red");
+		});
+	});
+
+
+USE THIS SITE A LOT!!!!!!!  --//-------~~~//~~~--------> api.jquery.com
+AND THIS ONE TOO!!!!!!!!!!!!!   ------->  http://jquery.com/
+
+________________________________________________________________________________________
+
+Week 5 - Day 2 - Arrays:
+
+Arrays -->  Collections of data
+allows to modify the source for images and data --> faster 
+since javascript is loosley typed --> arrays can take many different kinds of data
+two ways to create an array:
+	1. constructor way:  the constructor is a function that can create these structures on our behalf (capital first letter is a signal that the function Array() is a constructor function --> a kind of function that makes something else)
+		ex:  var myArr=new Array();
+
+	2. Literal notation: var myArr = [];
+		whenever you create a variable and assign it squre brackets, you know you have created an array.
+
+Declaring arrays:     myArr =['hello', 54.3,true];
+Indexes are the slots in the "toaster", and the elements are what go into those slots.
+Arrays start at ZERO!!! We start indexing at zero.
+		ex:    [NYC]  [LA]   [SYD]   [LDN]
+ 				 0		1	   2       3
+ 				 
+ 				NYC: first element
+ 				     zeroeth index
+ 				 LA: 2nd element
+ 				 	 first index
+ 				SYD: 3rd element
+ 				     2nd index
+ 				LDN: 4th element
+ 				     3rd index
+You can overwrite a whole array --> so be careful
+
+forEach method:
+		ex:  var fruits = ["banana", "apple, pear"]
+			 fruits.forEach(function(x,y){
+			 console.log(x, " , "+y);
+			 });
+
+			 would result in a list of the elements and their index numbers
+			 takes an anonymous function in as its argument
+			 spits out 'e' = element and 'i'= index number (0-#)
+HW:
+	carousel
+	Get comfortable with git
+	review css grid
+	review js
+	review jquery
+	review arrays
+
+
+Portfolios to look at:
+Aleck Ortega
+Siriam Krishnan
+Brian Chu
+Anna Powell-Smith 
+
+Look at codewars for good coding practice
+
+
+Carousel: DUE TOMORROW!!!
+1 image
+2 buttons --> "back" and "forwards"
+Need around 8 images
+Needs to loop around and back through all images --> if you're at last image, needs to loop back to first image and vice versa
+

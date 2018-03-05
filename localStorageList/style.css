@@ -1,0 +1,40 @@
+
+
+
+.listItem{
+	color: black;
+	font-size: 22px;
+}
+.completedItem{
+	display: hidden;
+	color: grey;
+	font-size: 16px;
+	text-decoration: line-through green;
+}
+.remove,.edit{
+	display: hidden;
+	color: black;
+	font-size: 22px;
+	text-decoration: none;
+}
+.editEntry{
+	display: hidden;
+
+}
+#input1{
+	font-size: 14px;
+	color: blue;
+}
+#submit{
+
+}
+#list{
+	font-size: 18px;
+	color: black;
+}
+#clearCompleted{
+
+}
+#clearAll{
+
+}
